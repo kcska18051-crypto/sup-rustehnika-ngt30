@@ -1,0 +1,348 @@
+.wrap { max-width: 1440px !important; }
+.section-video-block { max-width: none !important; }
+.slider-wrapper { padding: 0px !important; }
+.video-reviews__img { position: relative !important; }
+.video-reviews__item:hover .video-reviews__img { filter: brightness(1.05) contrast(1.05) !important; }
+.video-reviews__img::after { content: ""; position: absolute; inset: 0px; margin: auto; width: 20%; aspect-ratio: 1 / 1; background-color: rgba(38, 38, 39, 0.7); background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjRjVGNkY3IiBkPSJNMTcuNzgxNyAxMi4zODE5TDguNzgxNzYgMTcuODkxQzguNDU0NDkgMTguMTA5MSA4LjE4MTc2IDE3Ljk0NTUgOC4xODE3NiAxNy41NjM3VjYuNDM2NDdDOC4xODE3NiA2LjA1NDY1IDguNDU0NDkgNS44OTEwMiA4Ljc4MTc2IDYuMTA5MkwxNy43ODE3IDExLjYxODNDMTcuODQ5OSAxMS42NTYgMTcuOTA2OCAxMS43MTEzIDE3Ljk0NjQgMTEuNzc4NUMxNy45ODU5IDExLjg0NTYgMTguMDA2OCAxMS45MjIxIDE4LjAwNjggMTIuMDAwMUMxOC4wMDY4IDEyLjA3OCAxNy45ODU5IDEyLjE1NDUgMTcuOTQ2NCAxMi4yMjE3QzE3LjkwNjggMTIuMjg4OCAxNy44NDk5IDEyLjM0NDIgMTcuNzgxNyAxMi4zODE5WiIvPjwvc3ZnPg=="); background-size: contain; background-repeat: no-repeat; background-position: center center; border-radius: 50%; transition: filter 200ms; }
+.fancybox-slide--iframe { }
+@media (max-width: 768px) {
+  .fancybox-slide--iframe { padding: 8px !important; }
+}
+.fancybox-slide--iframe .fancybox-content { }
+@media (max-width: 1100px) {
+  .fancybox-slide--iframe .fancybox-content { max-width: none !important; }
+}
+.check-wrap:last-child { margin-bottom: 0px !important; }
+.filter-item__values--popular { padding-top: 16px !important; margin-left: -16px !important; padding-left: 16px !important; margin-bottom: 24px !important; padding-bottom: 24px !important; background-color: rgb(243, 243, 243) !important; border-radius: 3px !important; }
+.filter-item__sub-heading { margin-bottom: 12px !important; font-size: 15px !important; }
+.filter-item__values--popular .check-wrap { font-weight: 500 !important; }
+@media (max-width: 768px) {
+  .filter-item__values--popular { margin-left: -8px !important; margin-right: -8px !important; padding-left: 8px !important; padding-right: 8px !important; }
+  .filter-item__sub-heading { }
+  .filter-item__values--popular .check-wrap { }
+}
+.main-top { height: 483px; }
+.section-video-block { max-width: 1200px; margin: 40px auto 0px; }
+.slider-wrapper { position: relative; padding: 0px 50px; }
+.my-slider { margin: 20px 0px; overflow: hidden; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; }
+.video-slider__container { display: block; margin: 0px; }
+.video-slider__item { box-sizing: border-box; -webkit-user-drag: none; }
+.video-reviews__item { display: block; position: relative; border-radius: 8px; overflow: hidden; height: auto; -webkit-user-drag: none; }
+.video-reviews__img { display: block; position: relative; width: 100%; height: 180px; background-size: cover; background-position: center center; -webkit-user-drag: none; pointer-events: none; }
+.video-reviews__time { position: absolute; bottom: 10px; right: 10px; color: white; padding: 3px 8px; border-radius: 4px; font-size: 12px; }
+.video-reviews__name { min-height: auto; height: auto; overflow: visible; display: block; -webkit-line-clamp: unset; padding: 12px; font-size: 16px; line-height: 1.4; color: rgb(51, 51, 51); }
+@media (min-width: 768px) {
+  .video-reviews__name { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+}
+.slider-nav { position: absolute; top: 30%; left: 0px; right: 0px; transform: translateY(-50%); pointer-events: none; z-index: 10; }
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .slider-nav { top: 35%; }
+}
+.slider-nav button { pointer-events: all; position: absolute; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.9); color: rgb(51, 51, 51); font-size: 18px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px; transition: 0.3s; -webkit-user-drag: none; }
+#prev-button { left: 10px; }
+#next-button { right: 10px; }
+.slider-nav button:hover { background: rgb(255, 255, 255); transform: scale(1.1); }
+.slider-dots { display: none !important; }
+@media (max-width: 767px) {
+  .slider-wrapper { padding: 0px 15px; }
+  .my-slider { overflow: hidden; }
+  .slider-nav button { width: 35px; height: 35px; }
+  #prev-button { left: 5px; }
+  #next-button { right: 5px; }
+  .video-reviews__img { height: 150px; }
+}
+@media (min-width: 768px) and (max-width: 1365px) {
+  .slider-wrapper { padding: 0px 30px; }
+  #prev-button { left: 15px; }
+  #next-button { right: 15px; }
+}
+.tns-slider { transition: transform 0.5s; display: flex !important; }
+.tns-item { flex: 0 0 auto; width: 100%; }
+@media (min-width: 768px) {
+  .tns-item { width: 50%; }
+}
+@media (min-width: 1366px) {
+  .tns-item { width: 33.3333%; }
+}
+.page .catalog.list, .catalog.list.options {
+  & .product { display: flex; padding: 20px 16px 15px; justify-content: space-between; }
+  & .product-logo { position: unset; }
+  & .product-img img { max-width: 250px; }
+  & .product-image {
+  flex-direction: column; align-items: center; display: flex !important; width: 15% !important; grid-area: image !important;
+  & .product-logo { margin-top: 12px; text-align: center; }
+}
+  & .price { max-width: 100%; }
+  & .product-info { width: 55%; display: flex; flex-direction: column; justify-content: space-between; grid-area: info; z-index: 2; }
+  & .product-name { font-size: 17px; font-weight: 500; height: auto; margin-bottom: 4px; }
+  & .info-body { padding: 10px 18px; }
+  & .product-img { position: relative; top: 0px; }
+  & .product-prices { position: unset; text-align: center; }
+  & .product-buy-block { display: flex; flex-direction: column; width: 20%; grid-area: btns; padding-top: 24px; }
+  & .delivery-info { font-size: 12px; margin-top: 6px; }
+  & .product-buy { position: unset; width: 100%; margin-top: 6px; }
+  & .product-btns { display: flex; flex-direction: row; justify-content: flex-end; align-items: center; margin-top: 20px; }
+  & .product-like { position: unset; }
+  & .add-to-compare { position: unset; margin-right: 4px; height: 24px; width: 24px; }
+  & .info-footer { display: flex; margin-bottom: 16px; justify-content: space-around; }
+  & .product-link { color: rgb(114, 114, 114); font-weight: 400; text-decoration: underline 1px; text-transform: uppercase; font-size: 13px; }
+  & .info-body { display: flex; flex-direction: column; align-items: flex-start; }
+  & .delivery-info { display: block; }
+  & .mobile-status { display: none; }
+  & .desktop-status { display: block; }
+  & .firstpay { margin-right: 0px; }
+}
+.info-body { display: flex; flex-direction: column-reverse; align-items: flex-start; }
+.catalog {
+  & .delivery-info { display: none; }
+  & .info-footer { display: none; }
+  & .firstpay { margin-top: 0px; font-size: 13px; cursor: pointer; margin-right: 20px; }
+}
+.block.popular-goods {
+  & .delivery-info-mobile { display: none; }
+  & .delivery-info { display: none; }
+  & .info-footer { display: none; }
+}
+.catalog-title { display: flex; align-items: baseline; gap: 12px; }
+.catalog-title > div { white-space: nowrap; font-weight: 500; }
+@media (max-width: 768px) {
+  .product-article { font-size: 11px; padding: 0px 0px 8px; }
+  .catalog-title { margin-bottom: 16px; gap: 8px; flex-direction: column; }
+  .catalog-view { display: none; }
+  .page .catalog.list, .catalog.list.options {
+  & .product { display: grid; grid-template: "info info" "image btns" / 30% 70%; padding: 20px 0px 15px; }
+  & .product-like { width: 28px; height: 28px; }
+  & .add-to-compare svg { width: 28px; height: 28px; }
+  & .delivery-info { display: none; }
+  & .info-body { padding: 0px; font-size: 16px; }
+  & .mobile-status { display: block; }
+  & .desktop-status { display: none; }
+  & .info-footer { display: none; }
+  & .product-image { width: 100% !important; justify-content: space-between; }
+  & .product-logo { margin-left: 25px; margin-top: unset; text-align: center; min-height: 40px; align-content: center; }
+  & .product-info { width: 100%; }
+  & .product-buy-block { width: 100%; display: grid; grid-template: "delivery-info delivery-info" "A price" "product-btns buy-button" "product-btns analog-button" / 28% 1fr; gap: 5px 0px; align-items: end; }
+  & .catalog__analogs-button-container { grid-area: analog-button; display: flex; justify-content: flex-end; }
+  & .btn.catalog__analogs-button { max-width: 200px; bottom: 0px; }
+  & .product-buy { max-width: 120px; display: block; }
+  & .product-img img { max-width: 135px; }
+  & form { display: grid; grid-area: buy-button; justify-items: end; }
+  & .product-prices { grid-area: price; text-align: right; margin-top: 12px; }
+  & .price { font-size: 24px; }
+  & noindex { grid-area: product-btns; min-height: 36px; margin-bottom: 5px; align-content: center; }
+  & .product-btns { margin-right: 16px; }
+  & .delivery-info { display: block; font-size: 13px; grid-area: delivery-info; padding-left: 55px; text-align: end; }
+}
+  .catalog {
+  & .delivery-info { display: none; }
+  & .info-footer { display: none; }
+  & .delivery-info-mobile { display: none; }
+}
+  .block.popular-brands { overflow: hidden; }
+}
+.detail-left { width: 81%; }
+.detail-right { width: 19%; }
+.detail-right, .detail-left { margin-bottom: 5px; }
+.detail-body { display: flex; }
+.detail-brand img { margin-bottom: 5px; padding: 5px 0px 0px; }
+.detail-art { margin-bottom: 0px; font-weight: 500; color: rgb(64, 64, 64); line-height: 20px; font-size: 17px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; text-align: start; padding: 0px; width: fit-content; cursor: pointer; font-family: "PT Root UI"; display: flex; align-items: center; gap: 5px; }
+.detail-art::before { content: ""; width: 10px; height: 10px; background: url("https://www.rustehnika.ru/local/templates/rustehnika/images/copy-svg.svg") center center / contain no-repeat; display: inline-block; }
+.detail-art .creditarticle { text-decoration: underline gray; }
+.detail-btns { margin-bottom: 5px; }
+.detail-images { height: 490px; }
+.detail-img { display: flex; height: 100%; }
+.detail .price { font-size: 36px; max-width: 100%; }
+.btns-buy { padding-bottom: 5px; margin-bottom: 5px; border-bottom: 1px solid rgb(232, 233, 236); }
+.social-question { display: flex; justify-content: flex-start; margin-bottom: 5px; align-items: center; }
+.question-text { font-weight: 500; margin-left: 16px; }
+.social-block { padding-bottom: 15px; border-bottom: 1px solid rgb(232, 233, 236); }
+.detail-footer { display: flex; margin-bottom: 24px; align-items: center; }
+.detail-footer .separator { height: 76px; border: 1px solid rgb(242, 241, 241); }
+.footer-name { width: 19%; font-size: 24px; font-weight: 500; padding: 10px 16px; text-align: center; margin-right: 20px; color: rgb(100, 100, 100); }
+.product-article { line-height: 1; font-size: 12px; font-weight: 400; border: 0px; background: none; padding: 2px 0px 12px; cursor: pointer; display: flex; gap: 5px; align-items: center; color: rgb(191, 193, 198); min-height: 28px; }
+.product-article-none { min-height: 28px; padding: 0px 0px 15px; }
+.product-article::before { content: ""; width: 10px; height: 10px; background: url("https://www.rustehnika.ru/local/templates/rustehnika/images/copy-svg.svg") center center / contain no-repeat; display: inline-block; }
+button[data-event="copy"] { position: relative; overflow: visible; }
+button[data-event="copy"]::after { content: attr(data-copy-message); position: absolute; bottom: calc(100% + 8px); left: 50%; z-index: 10; padding: 7px 12px; border-radius: 8px; background: rgb(115, 116, 117); color: rgb(255, 255, 255); font: 500 12px / 1.4 sans-serif; white-space: nowrap; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 14px; pointer-events: none; opacity: 0; transform: translate(-50%, 6px); }
+button[data-event="copy"].is-copied::after { animation: 1.5s ease-in-out 0s 1 normal both running copy-tooltip; }
+@keyframes copy-tooltip { 
+  0%, 100% { opacity: 0; transform: translate(-50%, 6px); }
+  12%, 85% { opacity: 1; transform: translate(-50%, 0px); }
+}
+.basket-credit-btn { margin-top: 10px; background: rgb(255, 255, 255); }
+.order-btns { display: flex; flex-direction: column; }
+.order-btns .btn { width: 200px; }
+.firstpay.basket-lbl { margin-top: 0px; margin-bottom: 16px; }
+.footer-text { width: 37%; padding: 10px 16px; line-height: normal; color: rgb(100, 100, 100); margin: 0px 25px; }
+.credit-btns { display: flex; flex-direction: column; width: 20%; margin: 0px 25px; }
+.credit-btn { padding: 2px 0px; border: 1px solid rgb(255, 186, 8); width: 100%; font-weight: 400; line-height: normal; text-align: center; box-sizing: border-box; }
+.add-text { font-weight: 600; font-size: 15px; margin-left: 4px; display: inline; }
+.creditzero .add-text { font-size: 15px; }
+.credit-btn p { font-size: 14px; }
+.creditzero .sbsp { font-size: 14px; }
+.footer-text { margin: 0px; padding: 10px 25px; width: 36%; }
+.footer-name { margin: 0px; padding: 10px; }
+.row-btns { display: flex; gap: 10px; margin-top: 10px; }
+.row-btns a { flex: 1 1 0%; text-decoration: none; color: inherit; }
+.credit-btn { margin-bottom: 0px; }
+@media (max-width: 700px) {
+  .add-text { font-size: 14px; }
+}
+.footer-connect { width: 20%; text-align: center; align-content: center; color: rgb(137, 140, 149); }
+.footer-connect .phone { display: flex; justify-content: center; filter: opacity(0.5); transition: 0.3s linear; }
+.footer-connect .phone:hover { filter: opacity(1); }
+.mobile-better { display: none; }
+.detail-right .mobile-title { display: none; }
+.separator { border-width: medium 1px; border-style: none solid; border-color: currentcolor rgb(100, 100, 100); border-image: none; width: 1px; }
+.creditcalc__rate { background: rgb(255, 186, 8); font-weight: 400; border-radius: 8px; padding: 0px 4px; }
+.add-text-credit { font-weight: 600; }
+.add-text-leasing { font-weight: 400; }
+.detail-credit, .detail-quest, .detail-fav, .detail-pdf { margin-bottom: 5px; }
+.detail .detail-status { font-size: 16px; margin-top: 5px; margin-bottom: 5px; }
+.detail-right .detail-properties { display: flex; flex-direction: column; }
+.detail-properties .detail-brand { margin: auto; }
+.detail-left { display: flex; flex-direction: column; }
+.detail { margin-top: 22px; }
+.detail-right .detail-guarantee { margin-top: 5px; font-size: 16px; }
+@media (max-width: 1024px) {
+  .detail-right { width: 30%; }
+}
+@media (max-width: 768px) {
+  .detail { margin-top: 0px; }
+  .detail-properties .detail-brand { margin: 0px; }
+  .detail-left { flex-direction: column-reverse; }
+  .detail-right .mobile-title { display: block; font-weight: normal; font-size: 20px; line-height: 24px; margin: 0px 0px 8px; color: rgb(38, 38, 38); }
+  .detail h1 { width: 100%; }
+  .detail-body { flex-direction: column; }
+  .detail-right { width: 100%; }
+  .detail-left { width: 100%; }
+  .detail-images { height: unset; display: flex; gap: 20px; flex-direction: column-reverse; }
+  .social-question { justify-content: center; }
+  .question-text { font-size: 16px; }
+  .detail-footer { display: none; }
+  .btns-buy { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .btns-buy form { width: auto; }
+  .detail-btns .detail-count { display: none; }
+  .detail-buy { width: 100%; }
+  .detail .one-click__button { align-content: center; height: calc(100% - 5px); }
+  .mobile-better { display: flex; flex-direction: column; margin-top: 16px; border-bottom: 1px solid rgb(232, 233, 236); }
+  .better-name { display: flex; justify-content: center; align-items: center; margin-bottom: 12px; font-size: 20px; color: rgb(128, 128, 128); font-weight: 500; }
+  .better-name svg { filter: opacity(0.5); }
+  .better-name svg { margin-left: 12px; }
+  .credit-btns { width: 100%; display: flex; flex-direction: row; margin-bottom: 16px; justify-content: space-evenly; margin-left: 0px; margin-right: 0px; }
+  .credit-btn { border-width: medium; border-style: none; border-color: currentcolor; border-image: none; display: flex; flex-direction: row; align-items: center; margin-bottom: 0px; padding: 5px 0px; }
+  .credit-btn svg { margin-right: 3px; filter: opacity(0.5); }
+  .mobile-connect { display: flex; flex-direction: row; color: rgb(137, 140, 149); justify-content: center; }
+  .mobile-connect p { font-size: 16px; }
+  .mobile-connect .phone { display: flex; justify-content: center; filter: opacity(0.5); transition: 0.3s linear; }
+  .detail-properties { width: 100%; flex-direction: row; }
+}
+.firstpay { margin-top: 5px; font-size: 16px; cursor: pointer; }
+@media (max-width: 768px) {
+  .detail-descr .tab .video-reviews__item__detail { width: 100%; margin: 0px 0px 24px; }
+  .video-reviews__item__detail { display: block; position: relative; border-radius: 8px; overflow: hidden; height: auto; -webkit-user-drag: none; }
+}
+.ui-menu-item-wrapper.ui-menu-wrapper-articul { margin-top: -10px; margin-bottom: 5px; font-size: 14px; color: rgb(118, 127, 140); font-weight: 600; padding: 0px 10px !important; }
+.ui-state-active.ui-menu-item-wrapper.ui-menu-wrapper-articul { margin-top: -10px; margin-bottom: 5px; }
+.ui-autocomplete .ui-menu-item-wrapper.ui-menu-wrapper-articul { font-weight: 600; }
+.review-image img { max-width: 100%; }
+.contacts-box.col-3 { margin: 0px 20px 0px 0px; }
+.contacts-box.col-3:nth-child(3n+3) { margin-right: 0px; }
+.social-buttons__footer { display: flex; justify-content: space-between; gap: 4px; margin-bottom: -10px; }
+.max-btn {
+  background: rgb(94, 142, 208); border: 1px solid rgb(94, 142, 208); color: white; width: 100%; display: flex; flex-direction: row; justify-content: center; margin-bottom: 10px;
+  & img { width: 24px; height: 24px; border-radius: 50px; }
+}
+.max-btn:hover { color: white; background: rgb(33, 80, 145); border: 1px solid rgb(33, 80, 145); }
+@media (max-width: 768px) {
+  .social-buttons__footer { flex-direction: column; gap: 0px; }
+}
+.contacts-box .social-buttons { width: 245px; }
+.contacts-box .social-buttons .btn:hover { color: white !important; }
+.catalog-flex-row { display: flex; flex-flow: row; align-items: center; justify-content: space-between; }
+.catalog-filters { display: flex; flex-flow: wrap; gap: 10px 5px; }
+.catalog-control { display: flex; flex-direction: row; }
+.filter-tag { white-space: nowrap; color: rgb(38, 38, 38); border: 1px solid rgb(191, 193, 198); border-radius: 10px; padding: 0px 16px; display: flex; flex-direction: row; gap: 5px; align-items: center; }
+.filter-tag-close { width: 18px; height: 18px; display: inline-block; cursor: pointer; }
+.filter-tag-close::after { content: ""; background: url("https://www.rustehnika.ru/local/templates/rustehnika/images/svg/cancel.svg") 0% 0% / contain; height: 100%; width: 100%; display: block; filter: contrast(0.1); }
+.reset-link { font-size: 16px; background-color: rgb(224, 224, 224); padding: 0px 16px; border-radius: 10px; }
+@media (max-width: 768px) {
+  .catalog-top.catalog-flex-row { display: block; padding-bottom: 30px; margin-bottom: 20px; }
+  .catalog-filters { overflow: hidden; position: absolute; top: 70%; transform: translateY(50%); max-width: 100%; }
+  .catalog-control { width: 100%; justify-content: space-between; align-items: center; border-bottom: 1px solid rgb(232, 233, 236); }
+  .filter-tag { width: auto !important; }
+  .reset-filter.swiper-slide { width: auto !important; }
+}
+.mobile-bottom-menu { display: none; }
+@media (max-width: 768px) {
+  .header { padding: 5px 0px; position: fixed; top: 0px; right: 0px; left: 0px; box-shadow: rgba(33, 38, 45, 0.16) 0px 5px 14px; z-index: 9991; }
+  .header > .wrap { padding-right: 0px; padding-left: 0px; }
+  .header-mid { box-sizing: border-box; height: 103px; padding: 0px; transition: height 200ms; }
+  .header .logo { top: 10px; left: 13px; width: 203px; }
+  .header-phone__mobile { position: absolute; top: 16px; right: 12px; display: flex; align-items: center; gap: 10px; width: auto; }
+  .header-phone__mobile .header-feedback { position: relative; bottom: 0px; width: auto; }
+  .header-phone__mobile .header-feedback .btn { width: auto; padding: 3px 9px; }
+  .header-phone__mobile-contacts { display: flex; flex-direction: column; gap: 3px; }
+  .menu-mobile__contacts a, .header-phone__mobile-contacts a { box-sizing: border-box; align-items: center; min-height: 17px; padding-left: 22px; font-weight: 500; white-space: nowrap; display: flex !important; color: rgb(0, 0, 0) !important; font-size: 15px !important; line-height: 1.1 !important; }
+  .header-phone__mobile-callback { display: flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 34px; padding: 5px 10px; background: rgb(208, 0, 0); border-radius: 5px; font-size: 11px; font-weight: 600; line-height: 13px; text-align: center; white-space: nowrap; color: rgb(255, 255, 255) !important; }
+  .header-phone__mobile-callback:hover, .header-phone__mobile-callback:focus-visible { background: rgb(182, 0, 0); color: rgb(255, 255, 255) !important; }
+  .header-phone__mobile-phone { background: url("https://www.rustehnika.ru/local/templates/rustehnika/images/mobile-menu/phone.svg") left center / 11px 10px no-repeat; }
+  .header-phone__mobile-email { background: url("https://www.rustehnika.ru/local/templates/rustehnika/images/mobile-menu/email.svg") left center / 15px 16px no-repeat; }
+  .popup-menu-top { display: flex; height: 50px; }
+  .menu-mobile__contacts { position: absolute; right: 17px; background: none !important; height: auto !important; width: auto !important; }
+  .header-search { inset: 72px 28px auto; height: 30px; transition: opacity 150ms, transform 200ms, visibility linear 200ms; }
+  .popup-menu .menu-mobile .header-search { top: auto; }
+  .header.is-search-hidden .header-mid { height: 56px; }
+  .header.is-search-hidden .header-search { visibility: hidden; pointer-events: none; opacity: 0; }
+  .header-search .input { box-sizing: border-box; height: 30px; font-size: 12px; line-height: 16px; border: 1px solid rgb(232, 233, 236); border-radius: 6px; padding: 6px 12px 6px 36px; }
+  .header-search .btn { right: auto; bottom: 6px; left: 10px; width: 18px; height: 18px; background-size: contain; }
+  .main { padding-top: 160px; }
+  .body--main .main { padding-top: 116px; }
+  .header-mob, .header-compare, .header-fav, .header-lk, .header-cart, .header-bot { display: none; }
+  .popup-menu-holder { padding-bottom: calc(104px + env(safe-area-inset-bottom)); z-index: 9992; }
+  .mobile-bottom-menu { position: fixed; right: 0px; bottom: 0px; left: 0px; z-index: 1000; display: grid; grid-template-columns: repeat(5, minmax(0px, 1fr)); box-sizing: content-box; height: 64px; padding-bottom: env(safe-area-inset-bottom); background: rgb(255, 255, 255); border-top: 1px solid rgb(231, 231, 232); }
+  .mobile-bottom-menu__link { position: relative; display: flex; align-items: center; justify-content: center; min-width: 0px; height: 64px; }
+  .mobile-bottom-menu__link:focus-visible { outline: rgb(255, 186, 8) solid 2px; outline-offset: -3px; }
+  .mobile-bottom-menu__icon { position: absolute; left: 50%; display: block; flex: 0 0 auto; transform: translateX(-50%); background-repeat: no-repeat; background-position: center center; background-size: contain; }
+  .mobile-bottom-menu__link--catalog .mobile-bottom-menu__icon { top: 4px; width: 38px; height: 38px; background-image: url("https://www.rustehnika.ru/local/templates/rustehnika/images/mobile-menu/catalog.svg"); }
+  .mobile-bottom-menu__link--catalog { }
+  .mobile-bottom-menu__link--compare .mobile-bottom-menu__icon { top: 13px; width: 21px; height: 25px; background-image: url("https://www.rustehnika.ru/local/templates/rustehnika/images/mobile-menu/compare.png"); }
+  .mobile-bottom-menu__link--favorite .mobile-bottom-menu__icon { top: 13px; width: 15px; height: 22px; background-image: url("https://www.rustehnika.ru/local/templates/rustehnika/images/mobile-menu/favorite.svg"); }
+  .mobile-bottom-menu__link--profile .mobile-bottom-menu__icon { top: 13px; width: 23px; height: 25px; background-image: url("https://www.rustehnika.ru/local/templates/rustehnika/images/mobile-menu/profile.svg"); }
+  .mobile-bottom-menu__link--cart .mobile-bottom-menu__icon { top: 7px; width: 31px; height: 31px; background-image: url("https://www.rustehnika.ru/local/templates/rustehnika/images/mobile-menu/cart.svg"); }
+  .mobile-bottom-menu__label { position: absolute; right: 2px; bottom: 8px; left: 2px; overflow: hidden; color: rgb(150, 149, 152); font-family: Inter, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.1; text-align: center; text-overflow: ellipsis; white-space: nowrap; }
+  .mobile-bottom-menu__link--catalog .mobile-bottom-menu__label { bottom: 5px; font-size: 12px; font-weight: 500; line-height: 14px; }
+  .mobile-bottom-menu__count { position: absolute; top: 9px; left: calc(50% + 7px); z-index: 1; box-sizing: border-box; min-width: 17px; height: 18px; padding: 0px 4px; color: rgb(255, 255, 255); background: rgb(208, 0, 0); border-radius: 9px; font-size: 10px; font-weight: 400; line-height: 18px; text-align: center; }
+  .__jivoMobileButton { bottom: 50px !important; }
+}
+@media (max-width: 540px) {
+  .header .logo { top: 8px; width: 58px; }
+}
+@media (max-width: 480px) {
+  .header-phone__mobile-phone { background: url("https://www.rustehnika.ru/local/templates/rustehnika/images/mobile-menu/phone.svg") left center / 11px 10px no-repeat !important; }
+  .header-phone__mobile-email { background: url("https://www.rustehnika.ru/local/templates/rustehnika/images/mobile-menu/email.svg") left center / 15px 16px no-repeat !important; }
+  .header-phone__mobile a:not(.btn) { height: unset; line-height: 1.1; font-size: 15px !important; }
+}
+@media (max-width: 360px) {
+  .header .logo { left: 8px; width: 54px; }
+  .header-phone__mobile { right: 8px; gap: 6px; }
+  .header-phone__mobile-contacts a { padding-left: 18px; font-size: 12px !important; }
+  .header-phone__mobile-callback { padding-right: 7px; padding-left: 7px; font-size: 10px; }
+}
+.video-reviews__section { display: none; }
+.video-reviews__img, .video-reviews .video-reviews__img, .video-reviews__item .video-reviews__img, .video-reviews__item__detail .video-reviews__img { margin-bottom: 0px; }
+.video-reviews__name, .video-reviews__item .video-reviews__name { position: relative; display: -webkit-box; box-sizing: border-box; min-height: 46px; max-height: 58px; padding: 5px 0px 5px 48px; overflow: hidden; font-size: 16px; line-height: 1.4; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; background: rgb(241, 241, 241); border-radius: 0px 0px 15px 15px; }
+.video-reviews__name::before { content: ""; display: block; position: absolute; top: 50%; left: 6px; width: 36px; height: 36px; transform: translateY(-50%); background: url("https://www.rustehnika.ru/local/templates/rustehnika/images/logo-mobile.webp") center center / contain no-repeat; }
+@media (max-width: 768px) {
+  .video-reviews__name, .video-reviews__item .video-reviews__name { min-height: 44px; max-height: 47px; padding: 5px 0px 5px 44px; line-height: 20px; }
+  .video-reviews__name::before { width: 34px; height: 34px; }
+  .video-reviews .col-4 { margin-bottom: 15px; }
+}
+.tns-outer { margin-bottom: 50px; }
+.product-description-section--text.wyswig .table-wrap { width: 100%; margin: 26px 0px 34px; overflow-x: auto; }
+.product-description-section--text.wyswig table { width: 100%; min-width: 760px; border-collapse: collapse; border: 1px solid rgb(216, 216, 216); font-size: 15px; background: rgb(255, 255, 255); }
+.product-description-section--text.wyswig table th, .product-description-section--text.wyswig table td { padding: 13px 15px; border: 1px solid rgb(216, 216, 216); vertical-align: top; text-align: left; }
+.product-description-section--text.wyswig table th, .product-description-section--text.wyswig table tr:first-child { color: rgb(255, 255, 255); background: rgb(51, 51, 51); font-weight: 700; }
+.product-description-section--text.wyswig table tr:first-child:hover td { background: rgb(51, 51, 51); }
+.product-description-section--text.wyswig table tbody tr:nth-child(2n) td { background: rgb(247, 247, 247); }
+.product-description-section--text.wyswig table tbody tr:hover td { background: rgb(255, 244, 244); }

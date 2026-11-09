@@ -1,0 +1,10 @@
+:root { --ui-font-family-open-sans: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif; }
+@font-face { font-family: "Open Sans"; src: local("Open Sans"), url("4d79137cfc43d4eb.woff") format("woff"), url("2b5628c8899a5f1b.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Open Sans"; src: local("Open Sans Light"), url("3858bd9776f7daaf.woff") format("woff"), url("c3fd6ffcf2c41eef.ttf") format("truetype"); font-weight: 300; font-style: normal; }
+@font-face { font-family: "Open Sans"; src: local("Open Sans Semibold"), url("9b1f2910f1f35ca2.woff") format("woff"), url("66f75b15da8df004.ttf") format("truetype"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Open Sans"; src: local("Open Sans Bold"), url("2e752e244b08f3cf.woff") format("woff"), url("38bf28b9e205d829.ttf") format("truetype"); font-weight: 700; font-style: normal; }
+@font-face { font-family: OpenSans; src: local("Open Sans"), url("4d79137cfc43d4eb.woff") format("woff"), url("2b5628c8899a5f1b.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: OpenSans-Regular; src: local("Open Sans"), url("4d79137cfc43d4eb.woff") format("woff"), url("2b5628c8899a5f1b.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: OpenSans-Light; src: local("Open Sans Light"), url("3858bd9776f7daaf.woff") format("woff"), url("c3fd6ffcf2c41eef.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: OpenSans-Semibold; src: local("Open Sans Semibold"), url("9b1f2910f1f35ca2.woff") format("woff"), url("66f75b15da8df004.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: OpenSans-Bold; src: local("Open Sans Bold"), url("2e752e244b08f3cf.woff") format("woff"), url("38bf28b9e205d829.ttf") format("truetype"); font-weight: normal; font-style: normal; }
