@@ -7,13 +7,13 @@ async (page) => {
   await page.goto('http://127.0.0.1:4173/');
   await page.evaluate(()=>{localStorage.removeItem('rt-reviews');localStorage.removeItem('rt-basket')});
   for(const count of [0,1,4,5,6]){
-    await page.route('**/reviews.json',r=>r.fulfill({json:sample.slice(0,count)}));
+    await page.route('**/reviews.json*',r=>r.fulfill({json:sample.slice(0,count)}));
     await page.reload();
     await page.waitForFunction(n=>document.querySelectorAll('.review-card').length===n,count);
     check('review count '+count,await page.locator('.review-card').count()===count);
     check('arrows visibility '+count,await page.locator('.review-actions').isVisible()===(count>4));
     if(count===0)check('empty state',await page.locator('.review-status').innerText()==='Пока нет отзывов');
-    await page.unroute('**/reviews.json');
+    await page.unroute('**/reviews.json*');
   }
   await page.locator('.tab-link[href="#reviews"]').click();
   await page.waitForFunction(()=>Math.abs(document.querySelector('#reviews').getBoundingClientRect().top-88)<3);
@@ -31,6 +31,6 @@ async (page) => {
     check('no horizontal overflow '+width,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
     check('visible cards '+width,await page.locator('.review-card[aria-hidden="false"]').count()===(width===390?1:2));
   }
-  await page.unroute('**/reviews.json');await page.goto('http://127.0.0.1:4173/');await page.waitForSelector('.review-card');
+  await page.unroute('**/reviews.json*');await page.goto('http://127.0.0.1:4173/');await page.waitForSelector('.review-card');
   return passed;
 }

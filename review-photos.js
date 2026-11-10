@@ -52,10 +52,10 @@
     document.body.append(modal);modal.showModal();update();
   }
   async function mount(card,review){
-    if(!review.photoIds?.length)return;
+    if(!review.photoIds?.length&&!review.photos?.length)return;
     try{
-      const files=await Promise.all(review.photoIds.map(load));if(!card.isConnected)return;
-      const photos=files.filter(Boolean).map(file=>{const url=URL.createObjectURL(file);cardUrls.add(url);return {url}});
+      const files=await Promise.all((review.photoIds||[]).map(load));if(!card.isConnected)return;
+      const photos=[...(review.photos||[]).map(url=>({url})),...files.filter(Boolean).map(file=>{const url=URL.createObjectURL(file);cardUrls.add(url);return {url}})];
       if(!photos.length)return;
       const grid=document.createElement('div');grid.className='review-photo-grid';
       grid.setAttribute('aria-label','Фотографии к отзыву: '+photos.length);
