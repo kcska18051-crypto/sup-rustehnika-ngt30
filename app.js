@@ -54,11 +54,11 @@ function renderReviews(){track.replaceChildren();for(const [i,r] of reviews.entr
 prev.onclick=()=>{reviewIndex--;position()};next.onclick=()=>{reviewIndex++;position()};window.addEventListener('resize',()=>{position();clampButtons()});
 $('.review-write').onclick=()=>{
 const f=document.createElement('form');f.className='review-form';
-f.innerHTML='<div class="review-product"><img class="review-product-image" alt=""><div class="review-product-info"><div class="review-product-meta"><span>В наличии</span><span>Арт. NGT30</span></div><div class="review-product-name"></div><div class="review-product-price"></div></div></div><label class="review-form-label" for="review-message">Текст отзыва</label><textarea id="review-message" name="text" maxlength="10000" required></textarea><button type="submit" class="btn">Отправить</button>';
+f.innerHTML='<div class="review-product"><img class="review-product-image" alt=""><div class="review-product-info"><div class="review-product-meta"><span>В наличии</span><span>Арт. NGT30</span></div><div class="review-product-name"></div><div class="review-product-price"></div></div></div><label class="review-form-label" for="review-name">Имя</label><input id="review-name" name="name" type="text" maxlength="100" autocomplete="given-name"><label class="review-form-label" for="review-message">Текст отзыва</label><textarea id="review-message" name="text" maxlength="10000" required></textarea><button type="submit" class="btn">Отправить</button>';
 $('.review-product-image',f).src=images[0].src;$('.review-product-image',f).alt=images[0].alt;
 $('.review-product-name',f).textContent=$('h1').textContent.trim();
 $('.review-product-price',f).textContent=$('.detail-right .creditprice')?.textContent.trim()||'130 400 ₽';
-f.onsubmit=e=>{e.preventDefault();const text=f.elements.text.value.trim();if(!text){f.elements.text.setCustomValidity('Введите текст отзыва');f.reportValidity();return}const r={name:'Гость',text,local:true};const local=read('reviews',[]);local.push(r);write('reviews',local);reviews.push(r);reviewIndex=Math.max(0,reviews.length-perView());renderReviews();dialog.close();toast('Отзыв сохранён в этом браузере')};
+f.onsubmit=e=>{e.preventDefault();const text=f.elements.text.value.trim();if(!text){f.elements.text.setCustomValidity('Введите текст отзыва');f.reportValidity();return}const r={name:f.elements.name.value.trim()||'Гость',text,local:true};const local=read('reviews',[]);local.push(r);write('reviews',local);reviews.push(r);reviewIndex=Math.max(0,reviews.length-perView());renderReviews();dialog.close();toast('Отзыв сохранён в этом браузере')};
 f.elements.text.oninput=()=>f.elements.text.setCustomValidity('');
 openDialog('Оставить отзыв',f);
 };
